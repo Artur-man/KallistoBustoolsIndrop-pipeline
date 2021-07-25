@@ -8,4 +8,5 @@ RUN conda env create -f /environment.yml && conda clean -a
 RUN git clone https://github.com/dolphinnext/tools /usr/local/bin/dolphin-tools
 RUN mkdir -p /project /nl /mnt /share
 ENV PATH /opt/conda/envs/dolphinnext-kb-1.0/bin:/usr/local/bin/dolphin-tools/:$PATH
-RUN pip3 install kb-python==0.24.4
+# RUN pip3 install kb-python==0.24.4
+RUN pip3 install kb-python==0.26.3
